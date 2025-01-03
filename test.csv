@@ -1,0 +1,39 @@
+CTKLx05,10.61.184.5,"snmp-server community R3ad0nly4C0nt!t3ch! RO 61
+snmp-server community R3adWr!t34C0nt!t3ch! RW 61
+snmp-server community C0nt!BMC RO 99
+snmp-server location Kalyani, IN - Asia
+snmp-server contact TEWWMGNV@continental.com"
+CTKLx06,10.61.184.6,"snmp-server community R3ad0nly4C0nt!t3ch! RO 61
+snmp-server community R3adWr!t34C0nt!t3ch! RW 61
+snmp-server community C0nt!BMC RO 99
+snmp-server location Kalyani, IN - Asia
+snmp-server contact TEWWMGNV@continental.com"
+CTKLx08,10.61.184.8,"snmp-server community R3ad0nly4C0nt!t3ch! RO 61
+snmp-server community R3adWr!t34C0nt!t3ch! RW 61
+snmp-server community C0nt!BMC RO 99
+snmp-server location Kalyani, IN - Asia
+snmp-server contact TEWWMGNV@continental.com"
+CTKLx05,10.61.184.5,"snmp-server community R3ad0nly4C0nt!t3ch! RO 61
+snmp-server community R3adWr!t34C0nt!t3ch! RW 61
+snmp-server community C0nt!BMC RO 99
+snmp-server location Kalyani, IN - Asia
+snmp-server contact TEWWMGNV@continental.com"
+CTKLx05,10.61.184.5,"snmp-server community R3ad0nly4C0nt!t3ch! RO 61
+snmp-server community R3adWr!t34C0nt!t3ch! RW 61
+snmp-server community C0nt!BMC RO 99
+snmp-server location Kalyani, IN - Asia
+snmp-server contact TEWWMGNV@continental.com"
+CTKLx05,10.61.184.5,ntp server 10.61.184.1
+CTKLx05,10.61.184.5,ntp server 10.61.184.1
+CTKLx05,10.61.184.5,ntp server 10.61.184.1
+CTKLx06,10.61.184.6,ntp server 10.61.184.1
+CTKLx08,10.61.184.8,ntp server 10.61.184.1
+CTKLx05,10.61.184.5,ntp server 10.61.184.1
+CTKLx06,10.61.184.6,ntp server 10.61.184.1
+CTKLx08,10.61.184.8,ntp server 10.61.184.1
+CTKLx05,10.61.184.5,ntp server 10.61.184.1
+CTKLx06,10.61.184.6,ntp server 10.61.184.1
+CTKLx08,10.61.184.8,ntp server 10.61.184.1
+CTKLx05,10.61.184.5,ntp server 10.61.184.1
+CTKLx06,10.61.184.6,ntp server 10.61.184.1
+CTKLx08,10.61.184.8,ntp server 10.61.184.1

@@ -1,0 +1,1 @@
+AggregatedResult (code): {'CTJJx01': MultiResult: [Result: "code"]}

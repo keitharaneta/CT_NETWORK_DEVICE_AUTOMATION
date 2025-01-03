@@ -1,0 +1,875 @@
+2024-07-03 14:38:52,289 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 14:38:52,294 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 166, in code
+    for f_host, f_ip in self.hostname_ip.items():
+AttributeError: 'main_information' object has no attribute 'hostname_ip'
+
+2024-07-03 14:39:54,331 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 14:39:54,336 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 166, in code
+    for f_host, f_ip in self.hostname_ip.items():
+AttributeError: 'main_information' object has no attribute 'hostname_ip'
+
+2024-07-03 14:41:11,161 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 14:41:11,166 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 166, in code
+    for f_host, f_ip in self.v_hostname_ip.items():
+AttributeError: 'list' object has no attribute 'items'
+
+2024-07-03 14:41:56,484 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 14:41:56,488 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 167, in code
+    for f_host, f_ip in self.v_hostname_ip.items():
+AttributeError: 'list' object has no attribute 'items'
+
+2024-07-03 14:57:38,678 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 15:00:04,344 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 15:00:22,897 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 15:06:29,716 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 15:09:14,838 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 15:10:01,646 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 15:16:57,419 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 15:16:57,422 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 15:16:57,423 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 199, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory", enable=True)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 15:18:39,156 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 15:18:39,160 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 15:18:39,161 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 199, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory", enable=True)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 15:19:23,771 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 15:19:23,775 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 15:19:23,775 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 199, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory", enable=True)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 15:20:01,306 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 15:20:01,312 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 15:20:01,314 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 199, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory", enable=True)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 15:20:46,133 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 15:20:46,137 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 15:20:46,139 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 199, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory", enable=True)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 15:22:47,010 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 15:22:47,013 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 15:22:47,014 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM.py", line 199, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 15:24:44,358 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 15:24:44,361 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 15:24:44,362 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:02:04,879 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 23:02:04,886 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:02:04,887 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:02:57,292 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 23:02:57,296 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:02:57,297 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM copy.py", line 199, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:05:22,511 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:06:22,059 -  nornir.core -     INFO -        run() - Running task 'test123' with args {} on 1 hosts
+2024-07-03 23:06:22,062 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:06:22,063 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'test123' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in test123
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:08:09,971 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:08:09,974 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:08:09,974 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:09:01,542 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:09:01,544 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:09:01,546 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:09:02,898 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:09:02,901 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:09:02,903 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:09:19,894 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:09:19,897 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:09:19,897 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:12:24,167 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:12:24,170 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:12:24,171 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:12:28,747 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:12:28,752 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:12:28,754 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:12:48,258 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:12:48,269 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:12:48,271 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:13:02,944 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:13:02,951 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:13:02,953 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 9, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "c:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:15:29,176 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:23:32,335 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:23:32,337 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: nm_send_command() takes 1 positional argument but 2 were given
+
+2024-07-03 23:23:40,561 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:23:40,564 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:23:40,565 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 8, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:25:24,824 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:25:24,828 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:25:24,829 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM copy.py", line 188, in code
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:26:00,632 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:33:02,164 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:33:02,169 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:33:02,169 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM copy.py", line 176, in code
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:34:19,406 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:34:57,591 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:34:57,594 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM copy.py", line 168, in code
+    'host': f_ip,
+NameError: name 'f_ip' is not defined
+
+2024-07-03 23:35:14,085 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:35:27,908 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:44:28,809 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:44:28,811 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM copy.py", line 169, in code
+    'username': self.v_username,
+AttributeError: 'main_information' object has no attribute 'v_username'
+
+2024-07-03 23:44:57,795 -  nornir.core -     INFO -        run() - Running task 'code' with args {} on 1 hosts
+2024-07-03 23:44:57,798 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'code' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-WithNornirNM copy.py", line 176, in code
+    if self.v_device_type == str('switch').upper():
+AttributeError: 'main_information' object has no attribute 'v_device_type'
+
+2024-07-03 23:49:54,235 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:52:54,756 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:56:33,190 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:56:43,010 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:56:58,850 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:57:13,786 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:57:24,056 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-03 23:57:24,061 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-03 23:57:24,062 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 7, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-03 23:57:38,211 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 00:19:10,677 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 00:19:16,305 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 00:19:16,308 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-04 00:19:16,309 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'nm_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\Main_Network_Script-NORNIR-TEST.py", line 7, in nm_send_command
+    task.run(task=netmiko_send_command, command_string="show inventory")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-04 00:19:40,394 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 00:20:30,704 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 00:20:54,174 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 00:22:15,406 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 09:56:45,677 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 09:58:47,241 -  nornir.core -     INFO -        run() - Running task 'nm_send_command' with args {} on 1 hosts
+2024-07-04 10:01:42,186 -  nornir.core -  WARNING -        run() - Task 'nm_send_command' has not been run – 0 hosts selected
+2024-07-04 10:02:14,075 -  nornir.core -  WARNING -        run() - Task 'nm_send_command' has not been run – 0 hosts selected
+2024-07-04 10:02:25,038 -  nornir.core -  WARNING -        run() - Task 'nm_send_command' has not been run – 0 hosts selected
+2024-07-04 10:20:12,138 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:21:37,293 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:32:21,126 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:32:21,167 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-04 10:32:21,168 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 10, in hello_world
+    task.run(task=netmiko_send_command, command_string="show int g1/0/1")
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-04 10:32:38,784 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:32:51,134 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:33:31,060 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:33:42,072 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:34:19,863 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:35:21,129 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:35:21,132 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 10, in hello_world
+    return Result(
+TypeError: __init__() missing 1 required positional argument: 'host'
+
+2024-07-04 10:36:02,491 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:36:02,493 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 12, in hello_world
+    result=f"{task.host1} says hello world!"
+AttributeError: 'Task' object has no attribute 'host1'
+
+2024-07-04 10:36:11,575 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:36:11,577 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 10, in hello_world
+    return Result(
+TypeError: __init__() missing 1 required positional argument: 'host'
+
+2024-07-04 10:36:19,744 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:36:19,746 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 12, in hello_world
+    result=f"{task.host1} says hello world!"
+AttributeError: 'Task' object has no attribute 'host1'
+
+2024-07-04 10:36:27,854 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:36:27,857 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 10, in hello_world
+    return Result(
+TypeError: __init__() missing 1 required positional argument: 'host'
+
+2024-07-04 10:40:29,208 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:40:29,209 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 11, in hello_world
+    host=task.host1,
+AttributeError: 'Task' object has no attribute 'host1'
+
+2024-07-04 10:40:38,297 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2024-07-04 10:40:38,299 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 10, in hello_world
+    return Result(
+TypeError: __init__() missing 1 required positional argument: 'host'
+
+2024-07-04 10:43:14,519 -  nornir.core -     INFO -        run() - Running task 'get_current_banner' with args {} on 1 hosts
+2024-07-04 10:43:14,522 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\tasks\netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir_netmiko\connections\netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2024-07-04 10:43:14,523 - nornir.core.task -    ERROR -      start() - Host 'CTJJx01': task 'get_current_banner' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "c:\Users\uie34719\OneDrive - Continental AG\Documents\CONTINENTAL FILES\PERSONAL FILES\REVIEWER-1\DEVNET\OTHERS\PROJECT\SHOWOFF\TESTFOLDER\test11.py", line 10, in get_current_banner
+    output = task.run(netmiko_send_command, command_string='show running-config | i banner' )
+  File "C:\Users\uie34719\AppData\Local\Programs\Python\Python39\lib\site-packages\nornir\core\task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-07-04 10:43:41,943 -  nornir.core -     INFO -        run() - Running task 'get_current_banner' with args {} on 1 hosts
+2024-07-04 10:49:11,237 -  nornir.core -     INFO -        run() - Running task 'get_current_banner' with args {} on 1 hosts
+2024-07-04 10:51:17,342 -  nornir.core -     INFO -        run() - Running task 'get_current_banner' with args {} on 1 hosts
+2024-07-04 11:03:18,554 -  nornir.core -     INFO -        run() - Running task 'get_current_banner' with args {} on 1 hosts
+2024-07-04 13:21:15,214 -  nornir.core -     INFO -        run() - Running task 'get_current_banner' with args {} on 1 hosts
+2024-10-23 17:45:32,841 -  nornir.core -     INFO -        run() - Running task 'get_current_banner' with args {} on 1 hosts

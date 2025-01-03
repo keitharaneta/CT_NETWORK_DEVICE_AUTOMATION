@@ -1,0 +1,7 @@
+PROGRAM ERROR occured during python runtime compilation! Please check/verify the following:
+        '-On Excel, Check if "SHOW_OR_CHANGE" ITEMS has value
+        '-On Excel, Check if all VALUES have been filled up
+        '-On Excel, Check if you have follow the correct format of manually inputting "HOSTNAME_IP" and/or "COMMAND" VALUES
+        '-Please check if device is reachable!
+        '-Please check if username/password are good!
+For the "HOSTNAME_IP" ITEMS, Check the NOT provided. For the "COMMAND" VALUES, Check if command follows the cisco standard command

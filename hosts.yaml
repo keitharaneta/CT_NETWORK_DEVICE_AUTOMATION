@@ -1,0 +1,6 @@
+---
+
+CTJJx01:
+    hostname: "10.203.112.62"
+    groups:
+        - testgroup

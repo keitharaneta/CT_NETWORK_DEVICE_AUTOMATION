@@ -1,0 +1,1576 @@
+Primary Unit: Off Network Configuration 
+
+ 
+
+2.1 VTP Configuration 
+
+vlan 2 
+name MANAGEMENT 
+! 
+
+vtp mode transparent 
+vtp domain CTSK 
+vtp ver 2 
+vtp mode client 
+
+Base Configuration 
+
+service timestamps debug datetime msec 
+service timestamps log datetime msec 
+service password-encryption 
+service call-home 
+! 
+hostname CTSKwlc01 
+! 
+logging console emergencies 
+enable secret 9 $9$LKQyRobs/aI9q.$UlObcW0a9pgie.dlhcIlpWfPZtVWfWRIt1ODyko53qI 
+! 
+aaa new-model 
+! 
+
+****************************************************************** 
+****** CORP RADIUS - AMERICAS ************************* 
+****************************************************************** 
+
+aaa group server radius CORP_Radius 
+ server name CORP_10.198.129.21 
+ server name CORP_10.198.129.18 
+ deadtime 5 
+
+****************************************************************** 
+****** CORP RADIUS - EMEA ******************************* 
+****************************************************************** 
+
+aaa group server radius CORP_Radius 
+ server name CORP_10.179.141.245 
+ server name CORP_10.179.141.246 
+ deadtime 5 
+
+****************************************************************** 
+****** CORP RADIUS - ASIAPAC *************************** 
+****************************************************************** 
+
+aaa group server radius CORP_Radius 
+ server name CORP_10.219.39.127 
+ server name CORP_10.219.39.128 
+ deadtime 5 
+! 
+
+****************************************************************** 
+****** TECH RADIUS - AMERICAS  ************************* 
+****************************************************************** 
+
+aaa group server radius TECH_ISE_RADIUS 
+ server name TECH_QH 
+ server name TECH_FR 
+ deadtime 5 
+
+****************************************************************** 
+****** TECH RADIUS - EMEA  ******************************* 
+****************************************************************** 
+
+aaa group server radius TECH_ISE_RADIUS 
+
+ server name TECH_FR 
+
+ server name TECH_QH 
+
+ deadtime 5 
+
+****************************************************************** 
+
+****** TECH RADIUS - ASIAPAC  *************************** 
+
+****************************************************************** 
+
+aaa group server radius TECH_ISE_RADIUS 
+
+ server name TECH_IG 
+
+ server name TECH_FR 
+
+ deadtime 5 
+
+ 
+
+! 
+
+ 
+
+****************************************************************** 
+
+****** TECH TACACS - AMERICAS  ************************ 
+
+****************************************************************** 
+
+aaa group server tacacs+ TECH_ISE_TACACS 
+
+ server name TECH_QH 
+
+ server name TECH_FR 
+
+****************************************************************** 
+
+****** TECH TACACS - EMEA  ****************************** 
+
+****************************************************************** 
+
+aaa group server tacacs+ TECH_ISE_TACACS 
+
+ server name TECH_FR 
+
+ server name TECH_QH 
+
+****************************************************************** 
+
+****** TECH TACACS - ASIAPAC  ************************** 
+
+****************************************************************** 
+
+aaa group server tacacs+ TECH_ISE_TACACS 
+
+ server name TECH_IG 
+
+ server name TECH_FR 
+
+ 
+
+! 
+
+ 
+
+! 
+
+aaa authentication login default group tacacs+ local 
+
+aaa authentication enable default group tacacs+ enable 
+
+aaa authorization exec default group tacacs+ local if-authenticated 
+
+aaa accounting exec default start-stop group tacacs+ 
+
+aaa accounting commands 15 default start-stop group tacacs+ 
+
+aaa accounting network default start-stop group tacacs+ 
+
+aaa accounting connection default start-stop group tacacs+ 
+
+aaa accounting system default start-stop group tacacs+ 
+
+! 
+
+aaa session-id common 
+
+! 
+
+ip name-server 3.3.3.11 
+
+ip domain name tiretech2.contiwan.com 
+
+! 
+
+login on-success log 
+
+! 
+
+ 
+
+parameter-map type webauth global 
+
+ 
+
+This operation will permanently convert all relevant authentication commands to their CPL control-policy equivalents. As this conversion is irreversible and will disable the conversion CLI 'authentication display [legacy|new-style]', you are strongly advised to back up your current configuration before proceeding. 
+
+Do you wish to continue? [yes]: yes 
+
+ 
+
+ virtual-ip ipv4 198.51.100.1 
+
+ 
+
+username admin privilege 15 secret 9 $9$P5m7Z7xwBpb46.$1oeIazN3hl.GthuwFfIfn1nzUQxehodifxHpUXQwsyE 
+
+! 
+
+interface GigabitEthernet0 
+
+ description Service Port 
+
+ vrf forwarding Mgmt-intf 
+
+ ip address 4.4.4.9 255.255.254.0 
+
+ negotiation auto 
+
+ no mop enabled 
+
+ no shut 
+
+! 
+
+interface Vlan1 
+
+ no ip address 
+
+ 
+
+! 
+
+interface Vlan2 
+
+ description default 
+
+ ip address 2.2.2.100 255.255.255.0 
+
+ no shut 
+
+! 
+
+ip http server 
+
+ip http authentication aaa command-authorization 0 default 
+
+ip http authentication aaa command-authorization 15 default 
+
+ip http secure-server 
+
+ip http client source-interface Vlan2 
+
+ip forward-protocol nd 
+
+! 
+
+ip tftp source-interface GigabitEthernet0 
+
+ip route 0.0.0.0 0.0.0.0 2.2.2.1 
+
+ip route vrf Mgmt-intf 0.0.0.0 0.0.0.0 4.4.4.1 
+
+ip tacacs source-interface Vlan2 
+
+ip ssh version 2 
+
+! 
+
+wireless wps rogue ap rldp alarm-only monitor-ap-only 
+
+wireless wps rogue security-level high 
+
+! 
+
+ap profile default-ap-profile 
+
+ description "default ap profile" 
+
+ rogue detection containment auto-rate 
+
+ rogue detection min-rssi -80 
+
+ rogue detection min-transient-time 300 
+
+ rogue detection report-interval 30 
+
+! 
+
+ 
+
+ 
+
+ 
+
+****************************************************************** 
+
+************ RADIUS - AMERICAS *************************** 
+
+****************************************************************** 
+
+aaa server radius dynamic-author 
+
+ client 10.198.129.18 server-key 0 RegionSecret 
+
+ client 10.198.129.21 server-key 0 RegionSecret 
+
+ client 10.51.250.170 server-key 0 TechSecret 
+
+ client 10.51.252.170 server-key 0 TechSecret 
+
+****************************************************************** 
+
+************ RADIUS - EMEA ********************************* 
+
+****************************************************************** 
+
+aaa server radius dynamic-author 
+
+ client 10.179.141.245 server-key 0 RegionSecret 
+
+ client 10.179.141.246 server-key 0 RegionSecret 
+
+ client 10.51.252.170 server-key 0 TechSecret 
+
+ client 10.51.250.170 server-key 0 TechSecret 
+
+****************************************************************** 
+
+************ RADIUS - ASIAPAC ****************************** 
+
+****************************************************************** 
+
+aaa server radius dynamic-author 
+
+ client 10.219.39.127 server-key 0 RegionSecret 
+
+ client 10.219.39.128 server-key 0 RegionSecret 
+
+ client 10.51.254.170 server-key 0 TechSecret 
+
+ client 10.51.252.170 server-key 0 TechSecret 
+
+ 
+
+ 
+
+ 
+
+logging trap warnings 
+
+logging host 10.198.129.69 
+
+ip access-list standard 61 
+
+ 10 permit 10.198.129.69 
+
+! 
+
+snmp-server community R3ad0nly4C0nt!t3ch! RO 
+
+snmp-server location Somersworth, NH - US 
+
+snmp-server contact tewwmgnv@continental.com 
+
+snmp-server host 10.198.129.69 version 2c R3ad0nly4C0nt!t3ch! 
+
+! 
+
+ 
+
+****************************************************************** 
+
+****** TECH TACACS - AMERICAS  ************************ 
+
+****************************************************************** 
+
+tacacs server TECH_QH 
+
+ address ipv4 10.51.250.170 
+
+ key 0 2securecontitech 
+
+! 
+
+tacacs server TECH_FR 
+
+ address ipv4 10.51.252.170 
+
+ key 0 2securecontitech 
+
+****************************************************************** 
+
+****** TECH TACACS - EMEA  ****************************** 
+
+****************************************************************** 
+
+tacacs server TECH_FR 
+
+ address ipv4 10.51.252.170 
+
+ key 0 2securecontitech 
+
+! 
+
+tacacs server TECH_QH 
+
+ address ipv4 10.51.250.170 
+
+ key 0 2securecontitech 
+
+****************************************************************** 
+
+****** TECH TACACS - ASIAPAC  ************************** 
+
+****************************************************************** 
+
+tacacs server TECH_IG 
+
+ address ipv4 10.51.254.170 
+
+ key 0 2securecontitech 
+
+! 
+
+tacacs server TECH_FR 
+
+ address ipv4 10.51.252.170 
+
+ key 0 2securecontitech 
+
+ 
+
+ 
+
+ 
+
+****************************************************************** 
+
+****** TECH RADIUS - AMERICAS  ************************* 
+
+****************************************************************** 
+
+radius server TECH_QH 
+
+ address ipv4 10.51.250.170 
+
+ key 0 TechSecret 
+
+! 
+
+radius server TECH_FR 
+
+ address ipv4 10.51.252.170 
+
+ key 0 TechSecret 
+
+****************************************************************** 
+
+****** TECH RADIUS - EMEA  ******************************* 
+
+****************************************************************** 
+
+radius server TECH_FR 
+
+ address ipv4 10.51.252.170 
+
+ key 0 TechSecret 
+
+! 
+
+radius server TECH_QH 
+
+ address ipv4 10.51.250.170 
+
+ key 0 TechSecret 
+
+****************************************************************** 
+
+****** TECH RADIUS - ASIAPAC  *************************** 
+
+****************************************************************** 
+
+radius server TECH_IG 
+
+ address ipv4 10.51.254.170 
+
+ key 0 TechSecret 
+
+! 
+
+radius server TECH_FR 
+
+ address ipv4 10.51.252.170 
+
+ key 0 TechSecret 
+
+ 
+
+****************************************************************** 
+
+****** CORP RADIUS - AMERICAS ************************* 
+
+****************************************************************** 
+
+radius server CORP_10.198.129.18 
+
+ address ipv4 10.198.129.18 
+
+ key 0 RegionSecret 
+
+! 
+
+radius server CORP_10.198.129.21 
+
+ address ipv4 10.198.129.21 
+
+ key 0 RegionSecret 
+
+****************************************************************** 
+
+****** CORP RADIUS - EMEA ******************************* 
+
+****************************************************************** 
+
+radius server CORP_10.179.141.245 
+
+ address ipv4 10.179.141.245 
+
+ key 0 RegionSecret 
+
+! 
+
+radius server CORP_10.179.141.246 
+
+ address ipv4 10.179.141.246 
+
+ key 0 RegionSecret 
+
+****************************************************************** 
+
+****** CORP RADIUS - ASIAPAC *************************** 
+
+****************************************************************** 
+
+radius server CORP_10.219.39.127 
+
+ address ipv4 10.219.39.127 
+
+ key 0 RegionSecret 
+
+! 
+
+radius server CORP_10.219.39.128 
+
+ address ipv4 10.219.39.128 
+
+ key 0 RegionSecret 
+
+ 
+
+ 
+
+ 
+
+! 
+
+banner exec % 
+
+ 
+
+                                                   ,,                                   ,, 
+
+         .g8"""bgd                         mm      db  MMP""MM""YMM                   `7MM 
+
+       .dP'     `M                         MM          P'   MM   `7                     MM 
+
+       dM'       `  ,pW"Wq.  `7MMpMMMb.  mmMMmm  `7MM       MM       .gP"Ya   ,p6"bo    MMpMMMb. 
+
+       MM          6W'   `Wb   MM    MM    MM      MM       MM      ,M'   Yb 6M'  OO    MM    MM 
+
+       MM.         8M     M8   MM    MM    MM      MM       MM      8M"""""" 8M         MM    MM 
+
+       `Mb.     ,' YA.   ,A9   MM    MM    MM      MM       MM      YM.    , YM.    ,   MM    MM 
+
+         `"bmmmd'   `Ybmd9'  .JMML  JMML.  `Mbmo .JMML.   .JMML.     `Mbmmd'  YMbmd'  .JMML  JMML. 
+
+ 
+
+                                       Division of Continental 
+
+                                         Somersworth, NH - US 
+
+                                              $(hostname) 
+
+ 
+
+      You are now logging into a ContiTech controlled Network device.  All activities are monitored. 
+
+ 
+
+      This system is for the use of authorized personnel only. Individuals using this system without 
+
+      authority, or in excess of their authority, are subject to having all of their privileges on 
+
+      this system revoked. 
+
+ 
+
+      Anyone using this system expressly consents to monitoring and is advised that if such 
+
+      monitoring reveals possible evidence of criminal or malicious activity, system personnel may 
+
+      provide the evidence to law enforcement officials for criminal prosecution. 
+
+ 
+
+% 
+
+! 
+
+ 
+
+ 
+
+line con 0 
+
+ logging synchronous 
+
+ stopbits 1 
+
+line aux 0 
+
+ stopbits 1 
+
+line vty 0 4 
+
+ logging synchronous 
+
+ length 0 
+
+ transport input ssh 
+
+line vty 5 15 
+
+ logging synchronous 
+
+ transport input ssh 
+
+! 
+
+no ip dhcp pool webuidhcp 
+
+ntp server 10.144.17.11 
+
+ 
+
+ap dot11 24ghz shutdown 
+
+ 
+
+Are you sure you want to continue? (y/n)[y]: y 
+
+ 
+
+ap dot11 5ghz shutdown 
+
+ 
+
+Are you sure you want to continue? (y/n)[y]: y 
+
+ 
+
+wireless rf-network CTSK 
+
+wireless management interface Vlan2 
+
+ 
+
+ap country US 
+
+ 
+
+Changing country code could reset channel and RRM grouping configuration. If running in RRM One-Time mode, reassign channels after this command. Check customized APs for valid channel values after this command. 
+
+Are you sure you want to continue? (y/n)[y]: y 
+
+ 
+
+crypto key gen rsa 
+
+ 
+
+The name for the keys will be: CTSKwlc01-NEW.tiretech2.contiwan.com 
+
+Choose the size of the key modulus in the range of 512 to 4096 for your 
+
+  General Purpose Keys. Choosing a key modulus greater than 512 may take 
+
+  a few minutes. 
+
+How many bits in the modulus [1024]: 4096
+ 
+
+Secondary Unit: Off Network Configuration 
+
+ 
+
+VTP Configuration 
+
+vlan 2 
+
+name MANAGEMENT 
+
+vtp mode transparent 
+
+vtp domain CTSK 
+
+vtp ver 2 
+
+vtp mode client 
+
+ 
+
+Base Configuration 
+
+service timestamps debug datetime msec 
+
+service timestamps log datetime msec 
+
+service password-encryption 
+
+service call-home 
+
+! 
+
+aaa new-model 
+
+! 
+
+aaa authentication login default group tacacs+ local 
+
+aaa authentication enable default group tacacs+ enable 
+
+aaa authorization exec default group tacacs+ local if-authenticated 
+
+aaa accounting exec default start-stop group tacacs+ 
+
+aaa accounting commands 15 default start-stop group tacacs+ 
+
+aaa accounting network default start-stop group tacacs+ 
+
+aaa accounting connection default start-stop group tacacs+ 
+
+aaa accounting system default start-stop group tacacs+ 
+
+! 
+
+aaa session-id common 
+
+! 
+
+! 
+
+logging console emergencies 
+
+enable secret 9 $9$LKQyRobs/aI9q.$UlObcW0a9pgie.dlhcIlpWfPZtVWfWRIt1ODyko53qI 
+
+! 
+
+ip name-server 3.3.3.11 
+
+ip domain name tiretech2.contiwan.com 
+
+! 
+
+username admin privilege 15 secret 9 $9$P5m7Z7xwBpb46.$1oeIazN3hl.GthuwFfIfn1nzUQxehodifxHpUXQwsyE 
+
+! 
+
+interface Vlan1 
+
+ no ip address 
+
+! 
+
+interface Vlan2 
+
+ description default 
+
+ ip address 2.2.2.99 255.255.255.0 
+
+ no shut 
+
+! 
+
+ 
+
+no ip http server 
+
+ip http authentication aaa command-authorization 0 default 
+
+ip http authentication aaa command-authorization 15 default 
+
+ip http secure-server 
+
+ip http secure-trustpoint TP-self-signed-3823255246 
+
+! 
+
+wireless wps rogue ap rldp alarm-only monitor-ap-only 
+
+wireless wps rogue security-level high 
+
+! 
+
+wireless management interface Vlan2 
+
+! 
+
+ap profile default-ap-profile 
+
+ description "default ap profile" 
+
+ rogue detection containment auto-rate 
+
+ rogue detection min-rssi -80 
+
+ rogue detection min-transient-time 300 
+
+ rogue detection report-interval 30 
+
+! 
+
+ip route 0.0.0.0 0.0.0.0 2.2.2.1 
+
+ip tacacs source-interface Vlan2 
+
+ip ssh version 2 
+
+! 
+
+line con 0 
+
+ logging synchronous 
+
+ stopbits 1 
+
+line aux 0 
+
+ stopbits 1 
+
+line vty 0 4 
+
+ logging synchronous 
+
+ length 0 
+
+ transport input ssh 
+
+line vty 5 15 
+
+ logging synchronous 
+
+ transport input ssh 
+
+! 
+
+no ip dhcp pool webuidhcp 
+
+ 
+
+ap dot11 24ghz shutdown 
+
+ 
+
+Are you sure you want to continue? (y/n)[y]: y 
+
+ 
+
+ap dot11 5ghz shutdown 
+
+ 
+
+Are you sure you want to continue? (y/n)[y]: y 
+
+ 
+
+ap country US 
+
+ 
+
+Changing country code could reset channel and RRM grouping configuration. If running in RRM One-Time mode, reassign channels after this command. Check customized APs for valid channel values after this command. 
+
+Are you sure you want to continue? (y/n)[y]: y 
+
+ 
+
+crypto key gen rsa 
+
+ 
+
+The name for the keys will be: CTSKwlc01-NEW.tiretech2.contiwan.com 
+
+Choose the size of the key modulus in the range of 512 to 4096 for your 
+
+  General Purpose Keys. Choosing a key modulus greater than 512 may take 
+
+  a few minutes. 
+
+How many bits in the modulus [1024]: 4096
+ 
+
+Additional Configuration 
+
+ 
+
+ssh primary and run commands: 
+
+redundancy 
+
+main-cpu 
+
+standby console enable 
+
+! 
+
+device classifier 
+
+no wireless ipv6 client 
+
+! 
+
+flow exporter 10.198.129.69 
+
+ destination 10.198.129.69 
+
+ transport udp 6007 
+
+! 
+
+flow exporter export_AKIPS 
+
+ destination 10.198.129.69 
+
+! 
+
+flow exporter wireless-local-exporter 
+
+ destination local wlc 
+
+! 
+
+flow exporter AKiPS_10.198.129.69 
+
+ destination 10.198.129.69 
+
+ transport udp 9995 
+
+! 
+
+flow monitor AKiPS_Netflow_ipv4 
+
+ exporter wireless-local-exporter 
+
+ exporter AKiPS_10.198.129.69 
+
+ cache timeout active 60 
+
+ record wireless avc basic 
+
+! 
+
+line vty 0 4 
+
+  authorization commands 0 default 
+
+  authorization commands 15 default 
+
+! 
+
+ap dot11 24ghz rrm channel cleanair-event 
+
+ap dot11 24ghz rrm channel cleanair-event rogue-contribution 
+
+ap dot11 24ghz rate RATE_6M mandatory 
+
+ap dot11 24ghz rate RATE_9M mandatory 
+
+ap dot11 24ghz rate RATE_11M supported 
+
+ap dot11 24ghz rate RATE_1M disable 
+
+ap dot11 24ghz rate RATE_2M disable 
+
+ap dot11 24ghz rate RATE_5_5M disable 
+
+! 
+
+ap dot11 5ghz rrm channel cleanair-event 
+
+ap dot11 5ghz rrm channel cleanair-event rogue-contribution 
+
+ap dot11 5ghz edca-parameters fastlane 
+
+ap dot11 5ghz rate RATE_6M disable 
+
+ap dot11 5ghz rate RATE_9M disable 
+
+ap fra 
+
+! 
+
+license smart transport callhome 
+
+! 
+
+end 
+
+ 
+
+at the # prompt 
+
+ 
+
+license smart trust idtoken <Token from Portal> all force 
+
+ 
+
+Wireless Configuration 
+
+ 
+
+WLAN-G6 
+
+ 
+
+aaa authentication dot1x WLAN-G6_Authentication group CORP_Radius 
+
+aaa authorization network WLAN-G6_Authorization group CORP_Radius 
+
+aaa accounting identity WLAN-G6_Accounting start-stop group CORP_Radius 
+
+! 
+
+interface Vlan36 
+
+ description WLAN-G6 
+
+ ip address 36.36.36.3 255.255.255.0 
+
+ ip helper-address 3.3.3.11 
+
+! 
+
+wireless profile policy WLAN-G6_PolicyProfile 
+
+ accounting-list WLAN-G6_Accounting 
+
+ autoqos mode enterprise-avc 
+
+ description "WLAN-G6 Policy Profile" 
+
+ dhcp-tlv-caching 
+
+ http-tlv-caching 
+
+ ipv4 flow monitor wireless-avc-basic input 
+
+ ipv4 flow monitor wireless-avc-basic output 
+
+ ipv6 flow monitor wireless-avc-basic-ipv6 input 
+
+ ipv6 flow monitor wireless-avc-basic-ipv6 output 
+
+ service-policy input AutoQos-4.0-wlan-ET-SSID-Input-AVC-Policy 
+
+ service-policy output AutoQos-4.0-wlan-ET-SSID-Output-Policy 
+
+ vlan WLAN-G6 
+
+ no shutdown 
+
+! 
+
+wlan WLAN-G6 1 WLAN-G6 
+
+ no assisted-roaming neighbor-list 
+
+ security wpa wpa1 
+
+ security wpa wpa1 ciphers aes 
+
+ security wpa wpa1 ciphers tkip 
+
+ security dot1x authentication-list WLAN-G6_Authentication 
+
+ no shutdown 
+
+! 
+
+wireless profile policy WLAN-G6_PolicyProfile 
+
+shut 
+
+no ipv4 flow monitor wireless-avc-basic input 
+
+no ipv4 flow monitor wireless-avc-basic output 
+
+no ipv6 flow monitor wireless-avc-basic-ipv6 input 
+
+no ipv6 flow monitor wireless-avc-basic-ipv6 output 
+
+ipv4 flow monitor AKiPS_Netflow_ipv4 input 
+
+ipv4 flow monitor AKiPS_Netflow_ipv4 output 
+
+no shut 
+
+! 
+
+no flow monitor wireless-avc-basic-ipv6 
+
+no flow monitor wireless-avc-basic 
+
+! 
+
+wireless tag policy default-policy-tag 
+
+wlan WLAN-G6 policy WLAN-G6_PolicyProfile 
+
+ 
+
+WLAN-G7 
+
+ 
+
+aaa authentication dot1x WLAN-G7_Authentication group TECH_ISE_RADIUS 
+
+aaa authorization network WLAN-G7_Authorization group TECH_ISE_RADIUS 
+
+aaa accounting identity WLAN-G7_Accounting start-stop group TECH_ISE_RADIUS 
+
+! 
+
+interface Vlan37 
+
+ description WLAN-G7 
+
+ ip address 37.37.37.3 255.255.255.0 
+
+! 
+
+wireless profile policy WLAN-G7_PolicyProfile 
+
+ accounting-list WLAN-G7_Accounting 
+
+ description "WLAN-G7 Policy Profile" 
+
+ autoqos mode enterprise-avc 
+
+ dhcp-tlv-caching 
+
+ http-tlv-caching 
+
+ service-policy input AutoQos-4.0-wlan-ET-SSID-Input-AVC-Policy 
+
+ service-policy output AutoQos-4.0-wlan-ET-SSID-Output-Policy 
+
+ vlan WLAN-G7 
+
+ no shutdown 
+
+! 
+
+wlan WLAN-G7 2 WLAN-G7 
+
+ no assisted-roaming neighbor-list 
+
+ security dot1x authentication-list WLAN-G7_Authentication 
+
+ no shutdown 
+
+! 
+
+wireless tag policy default-policy-tag 
+
+wlan WLAN-G7 policy WLAN-G7_PolicyProfile 
+
+ 
+
+ 
+
+WLAN-G7-XX-RE 
+
+ 
+
+aaa authentication dot1x WLAN-G7-SK-RE_Authentication group TECH_ISE_RADIUS 
+
+aaa authorization network WLAN-G7-SK-RE_Authorization group TECH_ISE_RADIUS 
+
+aaa accounting identity WLAN-G7-SK-RE_Accounting start-stop group TECH_ISE_RADIUS 
+
+! 
+
+interface Vlan95 
+
+ description WLAN-G7-SK-RE 
+
+ ip address 95.95.95.227 255.255.255.240 
+
+! 
+
+wireless profile policy WLAN-G7-SK-RE_PolicyProfile 
+
+ description "WLAN-G7-SK-RE Policy Profile" 
+
+ autoqos mode enterprise-avc 
+
+ dhcp-tlv-caching 
+
+ http-tlv-caching 
+
+ service-policy input AutoQos-4.0-wlan-ET-SSID-Input-AVC-Policy 
+
+ service-policy output AutoQos-4.0-wlan-ET-SSID-Output-Policy 
+
+ vlan REMOTE_EXPERT 
+
+ no shutdown 
+
+! 
+
+wlan WLAN-G7-SK-RE 3 WLAN-G7-SK-RE 
+
+ no assisted-roaming neighbor-list 
+
+ security dot1x authentication-list WLAN-G7-SK-RE_Authentication 
+
+ no shutdown 
+
+! 
+
+wireless tag policy default-policy-tag 
+
+wlan WLAN-G7-SK-RE policy WLAN-G7-SK-RE_PolicyProfile 
+
+ 
+
+ 
+
+WLAN-G8-STAGING 
+
+ 
+
+aaa authorization network G8-MACFilter local 
+
+!  
+
+aaa attribute list WLAN-G8-List 
+
+attribute type ssid "WLAN-G8-Staging" 
+
+ ! 
+
+vlan 38 
+
+name WLAN-G8 
+
+! 
+
+interface Vlan38 
+
+description WLAN-G8 
+
+ip address 38.38.38.130 255.255.255.128 
+
+ip helper-address 3.3.3.11 
+
+! 
+
+ 
+
+IMPORTANT: 0.0.0.127 below is wildcard mask for 255.255.255.128 and will have to be changed accordingly depending on your subnet mask 
+
+ 
+
+ip access-list extended WLAN-G8-Staging_ACL 
+
+1 permit ip host 10.179.173.240 38.38.38.128 0.0.0.127 log 
+
+2 permit ip host 10.229.96.71 38.38.38.128 0.0.0.127  log 
+
+3 permit ip host 10.20.177.56 38.38.38.128 0.0.0.127 log 
+
+4 permit ip host 10.179.172.95 38.38.38.128 0.0.0.127 log 
+
+5 permit ip host 10.198.128.23 38.38.38.128 0.0.0.127  log 
+
+6 permit tcp 38.38.38.128 0.0.0.127 host 10.229.96.71 eq www log 
+
+7 permit tcp 38.38.38.128 0.0.0.127 host 10.229.96.71 eq 443 log 
+
+8 permit tcp 38.38.38.128 0.0.0.127 host 10.179.173.240 eq 443 
+
+9 permit tcp 38.38.38.128 0.0.0.127 host 10.179.173.240 eq 5494 log 
+
+10 permit tcp 38.38.38.128 0.0.0.127 host 10.179.172.95 eq 8888 log 
+
+11 permit udp 38.38.38.128 0.0.0.127 host 10.20.177.56 range bootps bootpc log 
+
+12 permit udp 38.38.38.128 0.0.0.127 host 10.20.177.56eq domain log 
+
+13 permit tcp 38.38.38.128 0.0.0.127 host 10.198.128.23 eq www log 
+
+14 permit tcp 38.38.38.128 0.0.0.127 host 10.179.172.95 eq 3128 log 
+
+15 permit icmp any any log 
+
+16 deny  ip any any 
+
+! 
+
+wireless profile policy WLAN-G8-Staging_PolicyProfile 
+
+description "WLAN-G8-Staging PolicyProfile" 
+
+dhcp-tlv-caching 
+
+http-tlv-caching 
+
+ipv4 acl WLAN-G8-Staging_ACL 
+
+service-policy input gold-up 
+
+service-policy output gold 
+
+vlan WLAN-G8 
+
+no shutdown 
+
+! 
+
+wlan WLAN-G8-Staging 4 WLAN-G8-Staging 
+
+no broadcast-ssid 
+
+mac-filtering G8-MACFilter 
+
+no security ft adaptive 
+
+security wpa psk set-key ascii 0 Cont!$cann3r 
+
+no security wpa akm dot1x 
+
+security wpa akm psk 
+
+no shutdown 
+
+! 
+
+wireless tag policy default-policy-tag 
+
+wlan WLAN-G8-Staging policy WLAN-G8-Staging_PolicyProfile 
+
+ 
+
+ 
+
+WLAN-G8 
+
+ 
+
+interface Vlan98 
+
+description CORP-G8 
+
+ip address 98.98.98.5 255.255.255.0 
+
+! 
+
+vlan group group_wlan_g8 vlan-list 98 
+
+! 
+
+aaa authentication dot1x ContiG8-AuthC group TECH_ISE_RADIUS 
+
+aaa authorization network ContiG8-AuthZ group TECH_ISE_RADIUS 
+
+aaa accounting identity ContiG8-Acc start-stop group TECH_ISE_RADIUS 
+
+! 
+
+service-template ContiG8-ServiceTemplate 
+
+vlan 98 
+
+! 
+
+parameter-map type subscriber attribute-to-service unsecInet-param 
+
+1 map device-type eq "2Wire-Device" user-role eq "unsecInet" 
+
+  1 service-template ContiG8-ServiceTemplate 
+
+! 
+
+wireless profile policy ContiG8PolicyProfile 
+
+accounting-list ContiG8-Acc 
+
+description ContiG8PolicyProfile 
+
+exclusionlist timeout 180 
+
+session-timeout 0 
+
+vlan group_wlan_g8 
+
+no shutdown 
+
+! 
+
+wlan WLAN-G8 2 WLAN-G8 
+
+mac-filtering ContiG8-AuthZ 
+
+security ft over-the-ds 
+
+security wpa psk set-key ascii 0 Cont!-G8smartphones 
+
+no security wpa akm dot1x 
+
+security wpa akm psk 
+
+security dot1x authentication-list ContiG8-AuthC 
+
+shut 
+
+! 
+
+wireless tag policy default-policy-tag 
+
+wlan WLAN-G8 policy ContiG8PolicyProfile 
+
+ 
+
+ContiGuest 
+
+ 
+
+aaa authentication dot1x ContiGuest-AuthC group CORP_Radius 
+
+aaa authorization network ContiGuest-AuthZ group CORP_Radius 
+
+aaa accounting identity ContiGuest-Acc start-stop group CORP_Radius 
+
+! 
+
+interface Vlan99 
+
+ description internetguestaccess 
+
+ ip address 99.99.99.5 255.255.255.0 
+
+! 
+
+ 
+
+****************************************************************** 
+
+****** CORP RADIUS - AMERICAS ************************* 
+
+****************************************************************** 
+
+ip access-list extended InternetGuestAccess_PreAuth 
+
+ 10 deny   tcp 99.99.99.0 0.0.0.255 host 10.198.129.18 eq 8443 log 
+
+ 20 deny   tcp 99.99.99.0 0.0.0.255 host 10.198.129.21 eq 8443 log 
+
+ 30 deny   ip host 10.198.129.18 99.99.99.0 0.0.0.255 log 
+
+ 40 deny   ip host 10.198.129.21 99.99.99.0 0.0.0.255 log 
+
+ 50 deny   udp 99.99.99.0 0.0.0.255 host 8.8.8.8 eq domain log 
+
+ 60 deny   udp host 8.8.8.8 99.99.99.0 0.0.0.255 eq domain log 
+
+ 70 permit ip any any 
+
+****************************************************************** 
+
+****** CORP RADIUS - EMEA ******************************* 
+
+****************************************************************** 
+
+ip access-list extended InternetGuestAccess_PreAuth 
+
+ 10 deny   tcp 99.99.99.0 0.0.0.255 host 10.179.141.245 eq 8443 log 
+
+ 20 deny   tcp 99.99.99.0 0.0.0.255 host 10.179.141.246 eq 8443 log 
+
+ 30 deny   ip host 10.179.141.245 99.99.99.0 0.0.0.255 log 
+
+ 40 deny   ip host 10.179.141.246 99.99.99.0 0.0.0.255 log 
+
+ 50 deny   udp 99.99.99.0 0.0.0.255 host 8.8.8.8 eq domain log 
+
+ 60 deny   udp host 8.8.8.8 99.99.99.0 0.0.0.255 eq domain log 
+
+ 70 permit ip any any 
+
+****************************************************************** 
+
+****** CORP RADIUS - ASIAPAC *************************** 
+
+****************************************************************** 
+
+ip access-list extended InternetGuestAccess_PreAuth 
+
+ 10 deny   tcp 99.99.99.0 0.0.0.255 host 10.219.39.127 eq 8443 log 
+
+ 20 deny   tcp 99.99.99.0 0.0.0.255 host 10.219.39.128 eq 8443 log 
+
+ 30 deny   ip host 10.219.39.127 99.99.99.0 0.0.0.255 log 
+
+ 40 deny   ip host 10.219.39.128 99.99.99.0 0.0.0.255 log 
+
+ 50 deny   udp 99.99.99.0 0.0.0.255 host 8.8.8.8 eq domain log 
+
+ 60 deny   udp host 8.8.8.8 99.99.99.0 0.0.0.255 eq domain log 
+
+ 70 permit ip any any 
+
+ 
+
+! 
+
+wireless profile policy ContiGuestPolicyProfile 
+
+ aaa-override 
+
+ accounting-list ContiGuest-Acc 
+
+ description ContiGuestPolicyProfile 
+
+ nac 
+
+ autoqos mode guest 
+
+ dhcp-tlv-caching 
+
+ http-tlv-caching 
+
+ service-policy input AutoQos-4.0-wlan-ET-SSID-Input-AVC-Policy 
+
+ service-policy output AutoQos-4.0-wlan-ET-SSID-Output-Policy 
+
+ vlan GUEST_WIRELESS 
+
+ no shutdown 
+
+! 
+
+wlan ContiGuest 6 ContiGuest 
+
+ mac-filtering ContiGuest-AuthZ 
+
+ no security ft adaptive 
+
+ security wpa psk set-key ascii 0 contign1 
+
+ no security wpa akm dot1x 
+
+ security wpa akm psk 
+
+ security dot1x authentication-list ContiGuest-AuthC 
+
+ no shutdown 
+
+! 
+
+wireless tag policy default-policy-tag 
+
+wlan ContiGuest policy ContiGuestPolicyProfile 
+
+ 
+
+ 

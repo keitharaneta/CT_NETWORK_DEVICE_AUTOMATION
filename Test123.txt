@@ -1,0 +1,792 @@
+{
+  "asset": {
+    "Supported_By": "tewwmgnv@continental.com"
+  },
+  "cfwhw.4": {
+    "CISCO-FIREWALL-MIB.cfwHardwareInformation": "Failover LAN Interface",
+    "CISCO-FIREWALL-MIB.cfwHardwareStatusDetail": "FO Ethernet1/8",
+    "CISCO-FIREWALL-MIB.cfwHardwareStatusValue": "2,up,1726196868,1726196868,Failover LAN Interface"
+  },
+  "cfwhw.6": {
+    "CISCO-FIREWALL-MIB.cfwHardwareInformation": "Primary unit",
+    "CISCO-FIREWALL-MIB.cfwHardwareStatusDetail": "Standby unit",
+    "CISCO-FIREWALL-MIB.cfwHardwareStatusValue": "10,standby,1726196868,1726196868,Primary unit"
+  },
+  "cfwhw.7": {
+    "CISCO-FIREWALL-MIB.cfwHardwareInformation": "Secondary unit (this device)",
+    "CISCO-FIREWALL-MIB.cfwHardwareStatusDetail": "Active unit",
+    "CISCO-FIREWALL-MIB.cfwHardwareStatusValue": "9,active,1726196868,1726196868,Secondary unit (this device)"
+  },
+  "chassis.1": {
+    "hw_rev": "V01",
+    "model": "FPR-1120",
+    "serial": "JMX2331X14K",
+    "sw_rev": "9.14(1)"
+  },
+  "cpu.1": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "1"
+  },
+  "cpu.10": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "10"
+  },
+  "cpu.11": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "11"
+  },
+  "cpu.12": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "12"
+  },
+  "cpu.13": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "1"
+  },
+  "cpu.2": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "2"
+  },
+  "cpu.3": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "3"
+  },
+  "cpu.4": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "4"
+  },
+  "cpu.5": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "5"
+  },
+  "cpu.6": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "6"
+  },
+  "cpu.7": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "7"
+  },
+  "cpu.8": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "8"
+  },
+  "cpu.9": {
+    "CISCO-PROCESS-MIB.cpmCPUTotal1minRev": "1",
+    "CISCO-PROCESS-MIB.cpmCPUTotalPhysicalIndex": "9"
+  },
+  "crawl.Cisco_Firewall_Config": {
+    "last_change": "2024-10-17 15:02",
+    "last_crawl": "2024-10-20 15:02",
+    "status": "OK"
+  },
+  "Ethernet1/10": {
+    "IF-MIB.ifAdminStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'Ethernet1/10' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "14",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "Ethernet1/10",
+    "IF-MIB.ifOperStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7d0082d",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,"
+  },
+  "Ethernet1/11": {
+    "IF-MIB.ifAdminStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'Ethernet1/11' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "15",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "Ethernet1/11",
+    "IF-MIB.ifOperStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7d0082e",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,"
+  },
+  "Ethernet1/12": {
+    "IF-MIB.ifAdminStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'Ethernet1/12' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "16",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "Ethernet1/12",
+    "IF-MIB.ifOperStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7d0082f",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,"
+  },
+  "Ethernet1/3": {
+    "IF-MIB.ifAdminStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'Ethernet1/3' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "7",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "Ethernet1/3",
+    "IF-MIB.ifOperStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7d00826",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,"
+  },
+  "Ethernet1/4": {
+    "IF-MIB.ifAdminStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'Ethernet1/4' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "8",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "Ethernet1/4",
+    "IF-MIB.ifOperStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7d00827",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,"
+  },
+  "Ethernet1/7": {
+    "IF-MIB.ifAdminStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'Ethernet1/7' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "11",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "Ethernet1/7",
+    "IF-MIB.ifOperStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7d0082a",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,"
+  },
+  "Ethernet1/9": {
+    "IF-MIB.ifAdminStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'Ethernet1/9' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "13",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "Ethernet1/9",
+    "IF-MIB.ifOperStatus": "2,down,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7d0082c",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,"
+  },
+  "FO": {
+    "IF-MIB.ifAdminStatus": "1,up,1726196868,1726196868,LAN/STATE Failover Interface",
+    "IF-MIB.ifAlias": "LAN/STATE Failover Interface",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'FO' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "12",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "FO",
+    "IF-MIB.ifOperStatus": "1,up,1726196868,1726196868,LAN/STATE Failover Interface",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7d0082b",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,LAN/STATE Failover Interface"
+  },
+  "fw.40.6": {
+    "CISCO-FIREWALL-MIB.cfwConnectionStatValue": "1"
+  },
+  "fwbuf.1550": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "1550",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "6284",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.16384": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "16384",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "100",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.2048": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "2048",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "100",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.256": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "256",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "5172",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.2560": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "2560",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "164",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.4": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "4",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "100",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.4096": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "4096",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "100",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.65536": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "65536",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "16",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.80": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "80",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "1000",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.8192": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "8192",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "100",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "fwbuf.9344": {
+    "CISCO-FIREWALL-MIB.cfwBufferStatSize": "9344",
+    "CISCO-FIREWALL-MIB.cfwBufferStatTotal": "7500",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUsed": "CISCO-FIREWALL-MIB.cfwBufferStatTotal,CISCO-FIREWALL-MIB.cfwBufferStatValue",
+    "CISCO-FIREWALL-MIB.cfwBufferStatUtil": "CISCO-FIREWALL-MIB.cfwBufferStatValue,CISCO-FIREWALL-MIB.cfwBufferStatTotal",
+    "CISCO-FIREWALL-MIB.cfwBufferStatValue": "1"
+  },
+  "ike": {
+    "CISCO-IPSEC-FLOW-MONITOR-MIB.cikeGlobalActiveTunnels": "1",
+    "CISCO-IPSEC-FLOW-MONITOR-MIB.cikeGlobalPreviousTunnels": "1"
+  },
+  "inside": {
+    "IF-MIB.ifAdminStatus": "1,up,1725332902,1725332902,INTERNAL_NETWORK",
+    "IF-MIB.ifAlias": "INTERNAL_NETWORK",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'inside' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "5",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifIPaddr": "10.228.149.66",
+    "IF-MIB.ifName": "inside",
+    "IF-MIB.ifOperStatus": "1,up,1725332902,1725332902,INTERNAL_NETWORK",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7cff624",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1725332902,1725332902,INTERNAL_NETWORK"
+  },
+  "Internal-Data0/0": {
+    "IF-MIB.ifAdminStatus": "1,up,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'Internal-Data0/0' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "2",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "Internal-Data0/0",
+    "IF-MIB.ifOperStatus": "1,up,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "000000000000",
+    "IF-MIB.ifSpeed": "10000000000",
+    "IF-MIB.ifType": "6,ethernetCsmacd,1726196868,1726196868,"
+  },
+  "MANAGEMENT": {
+    "IF-MIB.ifAdminStatus": "1,up,1725332902,1725332902,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'MANAGEMENT' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "3",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifIPaddr": "10.228.146.250",
+    "IF-MIB.ifName": "MANAGEMENT",
+    "IF-MIB.ifOperStatus": "1,up,1725332902,1725332902,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7cff601",
+    "IF-MIB.ifSpeed": "1000000000",
+    "IF-MIB.ifType": "6,ethernetCsmacd,1725332902,1725332902,"
+  },
+  "module.1": {
+    "ENTITY-MIB.entPhysicalSerialNum": "JMX2331X14K"
+  },
+  "module.10": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.11": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.12": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.13": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.14": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.15": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.16": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.17": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.18": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.19": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.2": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.20": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.21": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.22": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.23": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.24": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.25": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.26": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.27": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.28": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.29": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.3": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.30": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.31": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.32": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.33": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.4": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.5": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.6": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.7": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.8": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "module.9": {
+    "ENTITY-MIB.entPhysicalSerialNum": ""
+  },
+  "nat.3.3": {
+    "NAT-MIB.natAddrMapAddrUsed": "1",
+    "NAT-MIB.natAddrMapGlobalAddrFrom": "10.228.146.250",
+    "NAT-MIB.natAddrMapGlobalAddrTo": "10.228.146.250",
+    "NAT-MIB.natAddrMapGlobalPortFrom": "1",
+    "NAT-MIB.natAddrMapGlobalPortTo": "65535",
+    "NAT-MIB.natAddrMapName": "MANAGEMENT"
+  },
+  "nat.3.4": {
+    "NAT-MIB.natAddrMapAddrUsed": "1",
+    "NAT-MIB.natAddrMapGlobalAddrFrom": "10.228.146.250",
+    "NAT-MIB.natAddrMapGlobalAddrTo": "10.228.146.250",
+    "NAT-MIB.natAddrMapGlobalPortFrom": "1",
+    "NAT-MIB.natAddrMapGlobalPortTo": "65535",
+    "NAT-MIB.natAddrMapName": "MANAGEMENT"
+  },
+  "nat.5.3": {
+    "NAT-MIB.natAddrMapAddrUsed": "1",
+    "NAT-MIB.natAddrMapGlobalAddrFrom": "10.228.149.66",
+    "NAT-MIB.natAddrMapGlobalAddrTo": "10.228.149.66",
+    "NAT-MIB.natAddrMapGlobalPortFrom": "1",
+    "NAT-MIB.natAddrMapGlobalPortTo": "65535",
+    "NAT-MIB.natAddrMapName": "inside"
+  },
+  "nat.5.4": {
+    "NAT-MIB.natAddrMapAddrUsed": "1",
+    "NAT-MIB.natAddrMapGlobalAddrFrom": "10.228.149.66",
+    "NAT-MIB.natAddrMapGlobalAddrTo": "10.228.149.66",
+    "NAT-MIB.natAddrMapGlobalPortFrom": "1",
+    "NAT-MIB.natAddrMapGlobalPortTo": "65535",
+    "NAT-MIB.natAddrMapName": "inside"
+  },
+  "nlp_int_tap": {
+    "IF-MIB.ifAdminStatus": "1,up,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'nlp_int_tap' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "4",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "nlp_int_tap",
+    "IF-MIB.ifOperStatus": "1,up,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "000000000000",
+    "IF-MIB.ifSpeed": "1000000000",
+    "IF-MIB.ifType": "6,ethernetCsmacd,1726196868,1726196868,"
+  },
+  "ping4": {
+    "PING.icmpDup": "1",
+    "PING.icmpLost": "1",
+    "PING.icmpRtt": "1",
+    "PING.icmpState": "2,up,1632826315,1729074430,10.228.146.250"
+  },
+  "PLC_NETWORK_CONTROLS": {
+    "IF-MIB.ifAdminStatus": "1,up,1726196868,1726196868,PLC_CONTROLS",
+    "IF-MIB.ifAlias": "PLC_CONTROLS",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'PLC_NETWORK_CONTROLS' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "10",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "PLC_NETWORK_CONTROLS",
+    "IF-MIB.ifOperStatus": "1,up,1726196868,1726196868,PLC_CONTROLS",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7cff629",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,PLC_CONTROLS"
+  },
+  "PLC_NETWORK_SERVERS": {
+    "IF-MIB.ifAdminStatus": "2,down,1726196868,1726196868,PLC_SERVERS",
+    "IF-MIB.ifAlias": "PLC_SERVERS",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'PLC_NETWORK_SERVERS' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "6",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "PLC_NETWORK_SERVERS",
+    "IF-MIB.ifOperStatus": "2,down,1726196868,1726196868,PLC_SERVERS",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7cff625",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,PLC_SERVERS"
+  },
+  "ram.2.1": {
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCFree": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolName": "System memory",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal": "14552586232",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolUtil": "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed,CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal"
+  },
+  "ram.2.3": {
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCFree": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolName": "MEMPOOL_MSGLYR_HB",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal": "262144",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolUtil": "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed,CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal"
+  },
+  "ram.2.4": {
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCFree": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolName": "MEMPOOL_MSGLYR",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal": "1835008",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolUtil": "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed,CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal"
+  },
+  "ram.2.5": {
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCFree": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolName": "MEMPOOL_HEAPCACHE_0",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal": "784334880",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolUtil": "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed,CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal"
+  },
+  "ram.2.6": {
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCFree": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolName": "MEMPOOL_DMA",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal": "1073741824",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolUtil": "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed,CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal"
+  },
+  "ram.2.7": {
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCFree": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed": "1",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolName": "MEMPOOL_GLOBAL_SHARED",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal": "135168",
+    "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolUtil": "CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolHCUsed,CISCO-ENHANCED-MEMPOOL-MIB.cempMemPoolTotal"
+  },
+  "REMOTE_EXPERT": {
+    "IF-MIB.ifAdminStatus": "1,up,1726196868,1726196868,",
+    "IF-MIB.ifAlias": "",
+    "IF-MIB.ifDescr": "Adaptive Security Appliance 'REMOTE_EXPERT' interface",
+    "IF-MIB.ifHCInBroadcastPkts": "1",
+    "IF-MIB.ifHCInMulticastPkts": "1",
+    "IF-MIB.ifHCInOctets": "1",
+    "IF-MIB.ifHCInUcastPkts": "1",
+    "IF-MIB.ifHCOutBroadcastPkts": "1",
+    "IF-MIB.ifHCOutMulticastPkts": "1",
+    "IF-MIB.ifHCOutOctets": "1",
+    "IF-MIB.ifHCOutUcastPkts": "1",
+    "IF-MIB.ifInBitRate": "IF-MIB.ifHCInOctets",
+    "IF-MIB.ifIndex": "9",
+    "IF-MIB.ifInDiscards": "1",
+    "IF-MIB.ifInErrors": "1",
+    "IF-MIB.ifInUtil": "IF-MIB.ifHCInOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifName": "REMOTE_EXPERT",
+    "IF-MIB.ifOperStatus": "1,up,1726196868,1726196868,",
+    "IF-MIB.ifOutBitRate": "IF-MIB.ifHCOutOctets",
+    "IF-MIB.ifOutDiscards": "1",
+    "IF-MIB.ifOutErrors": "1",
+    "IF-MIB.ifOutUtil": "IF-MIB.ifHCOutOctets,IF-MIB.ifSpeed",
+    "IF-MIB.ifPhysAddress": "5c5ac7cff628",
+    "IF-MIB.ifSpeed": "0",
+    "IF-MIB.ifType": "1,other,1726196868,1726196868,"
+  },
+  "ssl": {
+    "ALTIGA-SSL-STATS-MIB.alSslStatsActiveSessions": "1",
+    "ALTIGA-SSL-STATS-MIB.alSslStatsTotalSessions": "1"
+  },
+  "svc": {
+    "CISCO-REMOTE-ACCESS-MONITOR-MIB.crasSVCCumulateSessions": "1",
+    "CISCO-REMOTE-ACCESS-MONITOR-MIB.crasSVCNumSessions": "1"
+  },
+  "sys": {
+    "ifXTable": "1",
+    "ip4addr": "10.228.146.250",
+    "SNMP.community": "R3ad0nly4C0nt!t3ch!",
+    "SNMP.discover_oids": "1755",
+    "SNMP.discover_runtime": "212",
+    "SNMP.discover_tt": "1726194135",
+    "SNMP.discover_walks": "114",
+    "SNMP.discover_walks_fail": "0",
+    "SNMP.discover_walks_ok": "114",
+    "SNMP.discover_walks_unknown": "0",
+    "SNMP.ipaddr": "10.228.146.250",
+    "SNMP.lost": "1",
+    "SNMP.maxrep": "5",
+    "SNMP.rtt": "1",
+    "SNMP.rx": "1",
+    "SNMP.snmpState": "1,down,1717823747,1726205062,",
+    "SNMP.tx": "1",
+    "SNMP.version": "2",
+    "SNMPv2-MIB.sysContact": "tewwmgnv@continental.com",
+    "SNMPv2-MIB.sysDescr": "Cisco Adaptive Security Appliance Version 9.14(1)",
+    "SNMPv2-MIB.sysLocation": "Pune IN - Asia",
+    "SNMPv2-MIB.sysName": "CTB8-PLCf01.tiretech2.contiwan.com",
+    "SNMPv2-MIB.sysObjectID": "CISCO-PRODUCTS-MIB.ciscoFpr1120td",
+    "SNMPv2-MIB.sysUpTime": "1718104584,1726205062"
+  },
+  "webvpn": {
+    "CISCO-REMOTE-ACCESS-MONITOR-MIB.crasWebvpnCumulateSessions": "1",
+    "CISCO-REMOTE-ACCESS-MONITOR-MIB.crasWebvpnNumSessions": "1"
+  },
+  "name": "CTB8-PLCf01"
+}
